@@ -21,19 +21,20 @@ Package.onUse(function(api) {
     'kadira:flow-router',
     'underscore',
     'useraccounts:core',
-    'modules'
+    'modules',
+    'jsx',
+    'blaze'
   ], ['client', 'server']);
 
   api.imply([
-    'kadira:flow-router@2.7.0',
-    'useraccounts:core@1.13.1',
+    'kadira:flow-router@2.11.0',
+    'useraccounts:core@1.14.2',
   ], ['client', 'server']);
 
   api.use([
      'react@0.14.1_1',
      'kadira:blaze-layout@2.3.0',
-     'kadira:react-layout@1.5.2',
-     'gwendall:blaze-to-react@0.1.2'
+     'kadira:react-layout@1.5.2'
   ], ['client', 'server'], { weak: true });
 
   api.addFiles([
